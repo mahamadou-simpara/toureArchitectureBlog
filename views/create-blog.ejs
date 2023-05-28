@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="create-style.css" />
+    <title>Create-blog</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2><a href="/">ArchiBlog</a></h2>
+      </div>
+      <div>
+        <ul>
+          <li> <a href="/blogs">Blogs</a></li>
+          <li><a href="/create-blog">Create Blog</a> </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      
+      <div id="form-div">
+       
+        <form action="/blogs" method="POST">
+          
+          <div class="div-form">
+            <div>
+                <label for="title_id">Title</label>
+              </div>
+              <input type="text" id="title_id" name="title" required/>
+          </div>
+
+          <div class="div-form">
+            <div>
+                <label for="summary_id">Summary</label>
+            </div>
+            <input type="text" id="summary_id" name="summary" required />
+          </div>
+       
+         
+          <div class="div-form">
+            <select name="author" required>
+              <% for (const author of authors){ %>
+              <option value="<%= author.id %>"><%= author.name %></option>
+              <% } %>
+            </select>
+          </div>
+        
+
+          <div class="div-form" id="message">
+            <label for="body_id">Message(blog)</label>
+            <input type="text" id="body_id" name="body" required/>
+          </div>
+
+          <div id="btn">
+            <button>Submit</button>
+        </div>
+        
+        </form>
+       
+      </div>
+    </main>
+   
+  </body>
+</html>

@@ -1,0 +1,157 @@
+body {
+ margin: 0;
+ padding: 0;
+ background-image: url('/imgs/MGA_OSU-AWP_Ext33_EmaPeter.jpg');
+ background-size: cover;
+ color: white;
+ font-family: 'Oleo Script', cursive;
+ font-family: 'Roboto', sans-serif;
+ height: 100%;
+ box-sizing: border-box;
+ background-repeat: no-repeat;
+ 
+}
+header{
+ background-color: rgba(22, 22, 22, 0.926);
+ display: flex;
+ justify-content: space-between;
+ border-bottom: 4px solid white;
+}
+
+header ul{
+ list-style: none;
+ display: flex;
+ justify-content: space-between;
+ gap: 2rem;
+ margin-right: 2rem;
+ margin-top: 2rem;
+
+}
+
+header ul li{
+ font-size: 1.5rem;
+}
+
+header ul li a{
+ text-decoration: none;
+ color: white;
+}
+
+header h2 a:hover{
+    cursor: pointer;
+    color: rgb(164, 164, 164);
+   }
+header ul li a:hover{
+ cursor: pointer;
+ color: rgb(164, 164, 164);
+}
+
+header h2{
+ margin: 0.1rem, 0;
+ text-transform: uppercase;
+ color: white;
+ font-size: 2rem;
+ margin-left: 2rem;
+}
+
+header h2 a{
+text-decoration: none;
+color: white;
+}
+
+
+#index-main{
+ width: 10rem;
+ text-align: right;
+}
+
+#index-main div{
+ position: absolute;
+ right: 3rem;
+}
+#index-main div h3{
+ font-size: 5rem;
+ font-family: inherit;
+ font-weight: bold;
+ margin-bottom: 0;
+}
+
+#index-main div address a{
+ text-decoration: none;
+ color: rgb(197, 197, 197);
+ font-size: 1.4rem;
+ font-weight: bold;
+}
+
+#second-section{
+position: relative;
+background-color: rgba(22, 22, 22, 0.926);
+top: 25rem;
+width: 70rem;
+height: 15rem;
+border-top: 4px solid white;
+border-right: 4px solid white;
+}
+/**      *     **/
+
+#blog-main{
+ border-top: 4px solid white;
+ background-color: rgb(24, 24, 24);
+ position: relative;
+ top: 33rem;
+ text-align: center;
+ padding-top: 1rem;
+ bottom: 0;
+}
+#container{
+ /* border-left: 90px solid rgb(255, 255, 255); */
+ padding: 2rem;
+ padding-left: -90px;
+ display: flex;
+ /* grid-template-columns: repeat(2, 1fr); Define the number and height of rows */
+ justify-content: center;
+ gap: 2rem;
+ flex-wrap: wrap;
+}
+
+
+#container div{
+/* border: 5px solid rgb(255, 255, 255); */
+}
+#description{
+ width: 50rem;
+ border-radius: 5px;
+ border: 5px solid rgb(45, 45, 45);
+ padding: 10px;
+ background-color: rgba(255, 255, 255, 0.865);
+ color: black;
+}
+#btn{
+ display: flex;
+ justify-content: center;
+
+}
+
+#btn button{
+ background-color: rgba(154, 154, 243, 0.843);
+ padding: 5px 15px;
+ border: none;
+ border-radius: 2px;
+ margin: 0 6px;
+ color: rgba(22, 22, 22, 0.926);
+ cursor: pointer;
+}
+#btn button:hover{
+    color: rgba(255, 255, 255, 0.926);
+    background-color: rgba(91, 91, 255, 0.98);
+}
+
+#btn button a {
+ text-decoration: none;
+ color: rgba(22, 22, 22, 0.926);
+}
+
+#btn button a:hover{
+    color: rgba(255, 255, 255, 0.926);
+    background-color: rgba(91, 91, 255, 0.98);
+}

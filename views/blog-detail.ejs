@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/detail.css" />
+    <title>Blog-detail</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2><a href="/">ArchiBlog</a></h2>
+      </div>
+      <div>
+        <ul>
+          <li><a href="/blogs">Blogs</a></li>
+          <li><a href="/create-blog">Create Blog</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <% for (const blog of data){ %>
+
+      <div>
+        <h1><%= blog.title %></h1>
+        <address>
+          <a href="mailto:<%= blog.email %>"><p>By <%= blog.name %></p></a>
+          <time><%= blog.date %></time>
+        </address>
+
+        <p><%= blog.body %></p>
+
+        <p><a href="/blogs">Click to Back on the list page !</a></p>
+      </div>
+      <% } %>
+    </main>
+  </body>
+</html>

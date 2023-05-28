@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blog-lists</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2><a href="/">ArchiBlog</a></h2>
+      </div>
+      <div>
+        <ul>
+          <li> <a href="/blogs">Blogs</a></li>
+          <li><a href="/create-blog">Create Blog</a> </li>
+        </ul>
+      </div>
+    </header>
+    <main id="blog-main">
+      <h1>List of blogs!</h1>
+
+      <% for (const blog of blogs){ %>
+      <div id="container">
+        <div id="description">
+          <div>
+            <div>
+              <h2><%= blog.title %></h2>
+              <address>By <%= blog.name %></address>
+              <p><%= blog.summary %></p>
+            </div>
+            <div id="btn">
+              <form action="/blog/<%= blog.id %>/delete" method="POST">
+                <button>Delete</button>
+              </form>
+              
+              <a href="/blog/<%= blog.id %>/update"><button>Update</button></a>
+            
+              <a href="/blog/<%= blog.id %>"><button>View</button></a> 
+            </div>
+          </div>
+        </div>
+        
+        <% } %>
+         
+      </div>
+    </main>
+  </body>
+</html>
